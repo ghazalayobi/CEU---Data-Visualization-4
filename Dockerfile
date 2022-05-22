@@ -15,10 +15,13 @@ RUN install2.r collapsibleTree
 RUN install2.r shinydashboard
 RUN install2.r logger
 RUN install2.r viridisLite
-RUN installGithub.r -u FALSE tidyverse/tidyverse
+
 
 RUN mkdir /app
 COPY *.R /app/
 
 EXPOSE 3838
 CMD ["R", "-e", "shiny::runApp('/app', port = 3838, host = '0.0.0.0')"]
+
+
+
