@@ -23,7 +23,7 @@ proxy:
     container-image: openanalytics/shinyproxy-demo
   - id: bikes
     display-name: Bikes Sales
-    description: foobar
+    description: Ghazal Ayobi Project
     container-image: bikes
 logging:
   file:
